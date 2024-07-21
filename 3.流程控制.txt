@@ -1,0 +1,4 @@
+1. 二元运算符：var1=var2==var3 如何后者相等，var1为true，否则为false
+var1=var2&&var3 如果var2和var3都为true,var1为true
+var1=var2||var3 如果var2和var3有一个为true,var1为true
+2. ^ 异或操作，相同为false，不同为true
