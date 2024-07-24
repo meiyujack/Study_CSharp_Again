@@ -1,0 +1,17 @@
+1. 强制类型转换如果用（<destinationType><sourceVar>）方法，如果发生溢出，可用checked()
+去检查是否可能导致溢出，如果溢出，程序则会报错进行提醒。或者在项目属性中在生成设置的高级
+设置中有个选项可以达到同样效果。此语句的反面是uncheck()，会起到忽略检查效果，即可能导致
+溢出的错误结果。
+2. 如果采用Convert命令去强制类型转换的时候，总是会进行溢出检查，是否有checked或者项目属性
+设置不起作用，如果溢出，运行报错。
+3. 变量本身的ToString()和Convert.ToString()一样。
+4. 运用switch case表达式进行模式匹配。case string t when t.StartsWith("T") when关键字
+var x x.GetType().Name 获得种类名称的string。可以 case null，定义含有null项的int数组时加问号？
+表达该数组可包含空对象。
+5. 多维数组之矩形数组，可用foreach语句一次性遍历出来。锯齿数组每行的元素个数可能不同，可用
+双层foreach语句嵌套遍历。
+6. 字符串有个方法是ToCharArray(），可把字符串转换为字符数组来进行遍历。
+7. 字符串Trim()方法除了删除空格，还可以删除别的字符，只需把这些字符组成一个字符数组传入即可。
+8. 字符串PadLeft()或PadRight()可以在字符串的左右添加空格以达到给定字符串的长度，第二个参数指
+定用什么char字符去补齐长度。
+9. IntelliCode在确定是该选项后直接输入后续步骤，不需要按Tab。
